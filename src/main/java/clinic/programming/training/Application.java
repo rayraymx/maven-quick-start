@@ -1,7 +1,20 @@
 package clinic.programming.training;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class Application {
     
+	public void greet(){
+		List <String> greetings = new ArrayList();
+		greetings.add("Helo");
+		
+		for(String greeting : greetings){
+			System.out.println("Greeting" + greeting);
+			
+		}
+	}
+	
     public Application() {
         System.out.println ("Inside Application");
     }
@@ -10,5 +23,6 @@ public class Application {
     public static void main (String[] args) {
     	System.out.println ("Starting Application");
 		Application app = new Application();
+		app.greet();
     }
 }
